@@ -36,12 +36,11 @@ h2{
 h2::after{
   content: '';
   position: absolute;
-  left: 110px;
+  left: 0;
   bottom: -10px;
   display: inline-block;
-  width: 110px;
+  width: 130px;
   height: 2px;
-  transform: translateX(-100%);
   background-color: rgb(34, 165, 1);
 }
 
