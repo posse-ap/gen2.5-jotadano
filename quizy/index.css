@@ -61,4 +61,16 @@ section{
 
 #truebox1{
   display: none;
+  background-color: rgba(204, 203, 203, 0.158);
+  padding: 13px;
+}
+
+#falsebox1{
+  display: none;
+  background-color: rgba(204, 203, 203, 0.199);
+  padding: 13px;
+}
+
+span{
+  font-weight: 900;
 }
