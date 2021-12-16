@@ -11,9 +11,9 @@ true1.onclick = () => {
   true1.style.backgroundColor = "#287dff";
   true1.style.color = "white";
   truebox1.style.display = "block";
-  true1.disabled = true;
-  false1.disabled = true;
-  false2.disabled = true;
+  true1.style.pointerEvents = "none";
+  false1.style.pointerEvents = "none";
+  false2.style.pointerEvents = "none";
 };
 
 false1.onclick = () => {
@@ -22,6 +22,9 @@ false1.onclick = () => {
   falsebox1.style.display = "block";
   true1.style.backgroundColor = "#287dff";
   true1.style.color = "white";
+  true1.style.pointerEvents = "none";
+  false1.style.pointerEvents = "none";
+  false2.style.pointerEvents = "none";
 };
 
 false2.onclick = () => {
@@ -30,7 +33,11 @@ false2.onclick = () => {
   falsebox1.style.display = "block";
   true1.style.backgroundColor = "#287dff";
   true1.style.color = "white";
+  true1.style.pointerEvents = "none";
+  false1.style.pointerEvents = "none";
+  false2.style.pointerEvents = "none";
 };
+
 
 // document.getElementById("true1").disabled = true;
 // console.log(true1);

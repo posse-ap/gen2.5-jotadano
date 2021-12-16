@@ -65,12 +65,39 @@ section{
   padding: 13px;
 }
 
+.truebox1_text::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background-color: #287dff;
+}
+
 #falsebox1{
   display: none;
   background-color: rgba(204, 203, 203, 0.199);
   padding: 13px;
 }
 
-span{
+.falsebox1_text::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  display: inline-block;
+  width: 65px;
+  height: 3px;
+  background-color: #ff5128;
+}
+
+.truebox1_text, .falsebox1_text{
   font-weight: 900;
+  position: relative;
+}
+
+#truebox1, #falsebox1{
+  line-height: 2.5em;
 }
