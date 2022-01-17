@@ -59,13 +59,13 @@ section{
   margin: 10px auto;
 }
 
-#truebox1{
+.resultbox{
   display: none;
   background-color: rgba(204, 203, 203, 0.158);
   padding: 13px;
 }
 
-.truebox1_text::after{
+.truebox_text::after{
   content: '';
   position: absolute;
   left: 0;
@@ -76,13 +76,13 @@ section{
   background-color: #287dff;
 }
 
-#falsebox1{
+/* #falsebox{
   display: none;
   background-color: rgba(204, 203, 203, 0.199);
   padding: 13px;
-}
+} */
 
-.falsebox1_text::after{
+.falsebox_text::after{
   content: '';
   position: absolute;
   left: 0;
@@ -93,11 +93,31 @@ section{
   background-color: #ff5128;
 }
 
-.truebox1_text, .falsebox1_text{
+.truebox_text, .falsebox_text{
   font-weight: 900;
   position: relative;
 }
 
-#truebox1, #falsebox1{
+.truebox, .falsebox{
   line-height: 2.5em;
+  display: block;
+}
+
+.loop{
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.button1{
+  background-color: #287dff;
+  color: white;
+}
+
+.button2{
+  background-color: #ff5128;
+  color: white;
+}
+
+.unClick{
+  pointer-events: none;
 }
