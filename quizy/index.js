@@ -71,7 +71,7 @@ for(let i = 0; i<10; i++){
   let choices = ['<li class="choice" id="true1'+[i]+'">'+choice[i][0]+'</li>'
   ,'<li class="choice" id="false1'+[i]+1+'">'+choice[i][1]+'</li>'
   ,'<li class="choice" id="false2'+[i]+2+'">'+choice[i][2]+'</li>']
-  choices = shuffle(choices);
+  shuffle(choices);
   main += '<h2 class="title">'+[i+1]+'.この地名はなんて読む？</h2>'+'<img src="img/'+picture[i]+'.png" alt="地名">'
 
   +'<ul class="choices" id="choices">'
