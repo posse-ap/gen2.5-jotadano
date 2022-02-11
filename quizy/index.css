@@ -36,12 +36,11 @@ h2{
 h2::after{
   content: '';
   position: absolute;
-  left: 110px;
+  left: 0;
   bottom: -10px;
   display: inline-block;
-  width: 110px;
+  width: 130px;
   height: 2px;
-  transform: translateX(-100%);
   background-color: rgb(34, 165, 1);
 }
 
@@ -58,4 +57,67 @@ h2:last-child:after{
 section{
   width: 100%;
   margin: 10px auto;
+}
+
+.resultbox{
+  display: none;
+  background-color: rgba(204, 203, 203, 0.158);
+  padding: 13px;
+}
+
+.truebox_text::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background-color: #287dff;
+}
+
+/* #falsebox{
+  display: none;
+  background-color: rgba(204, 203, 203, 0.199);
+  padding: 13px;
+} */
+
+.falsebox_text::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  display: inline-block;
+  width: 65px;
+  height: 3px;
+  background-color: #ff5128;
+}
+
+.truebox_text, .falsebox_text{
+  font-weight: 900;
+  position: relative;
+}
+
+.truebox, .falsebox{
+  line-height: 2.5em;
+  display: block;
+}
+
+.loop{
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.button1{
+  background-color: #287dff;
+  color: white;
+}
+
+.button2{
+  background-color: #ff5128;
+  color: white;
+}
+
+.unClick{
+  pointer-events: none;
 }
