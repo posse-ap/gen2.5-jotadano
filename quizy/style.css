@@ -1,0 +1,38 @@
+li{
+  list-style: none;
+  border: 1px solid rgba(128, 128, 128, 0.445);
+  padding: 15px;
+  margin: 10px;
+}
+
+ul{
+  padding: 0;
+}
+
+h1{
+  width: 620px;
+  margin: 0 auto;
+  font-size: 19px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+h2::after{
+  display: block;
+  background-color: green;
+  width: 120px;
+  height: 2px;
+  content: '';
+  margin-top: 10px;
+}
+
+section{
+  width: 620px;
+  margin: 0 auto;
+}
